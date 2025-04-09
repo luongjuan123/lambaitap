@@ -23,8 +23,8 @@ public class LineSegment {
         this.d2 = new Point(other.d2.getX(), other.d2.getY());
     }
     public LineSegment(Point d1, Point d2) {
-        this.d1 = new Point(d1.getX(), d1.getY());
-        this.d2 = new Point(d2.getX(), d2.getY());
+        this.d1 = d1;
+        this.d2 = d2;
     }
     public void move(int dx, int dy) {
         this.d1.move(dx, dy);
@@ -33,6 +33,20 @@ public class LineSegment {
     public double len() {
         return d2.distance(d1);
     }
+    // GETTER AND SETTER
+    public void setD1(Point d1) {
+        this.d1 = d1;
+    }
+    public void setD2(Point d2) {
+        this.d1 = d2;
+    }
+    public Point getD1() {
+        return d1;
+    }
+    public Point getD2() {
+        return d2;
+    }
+    //END GETTER AND SETTER
     public double angle() {
         double dx = d2.getX() - d1.getX();
         double dy = d2.getY() - d1.getY();

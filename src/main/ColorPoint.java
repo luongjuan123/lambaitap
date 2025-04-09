@@ -17,8 +17,20 @@ public class ColorPoint extends Point {
 
     public void read() {
         super.read();
-        Scanner sc = new Scanner(System.in);
-        color = sc.next();
+        Scanner sc = new Scanner(System.in); color = sc.next();
+    }
+    // SETTER AND GETTER
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public String getColor() {
+        return color;
+    }
+    // END SETTER AND GETTER
+    @Override
+    public String toString() {
+        String tmp = super.toString();
+        return tmp + ": " + color;
     }
 
 }

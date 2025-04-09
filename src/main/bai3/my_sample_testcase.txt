@@ -1,0 +1,7 @@
+INPUT:
+1 2
+Green
+OUTPUT:
+(11, 10): Green
+(6, 3): black
+(6, 3): yellow
